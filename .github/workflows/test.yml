@@ -9,6 +9,8 @@ jobs:
         image: mongo:4.4.6
         ports:
           - 27017:27017
+        env:
+          ES_TEST_SERVER_URL: 'http://localhost:27017'
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
