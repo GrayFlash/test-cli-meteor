@@ -7,9 +7,6 @@ jobs:
     services:
       mongo:
         image: mongo:4.4.6
-        env:
-          - MONGO_INITDB_ROOT_USERNAME=user
-          - MONGO_INITDB_ROOT_PASSWORD=abcd
         ports:
           - 27017:27017
     steps:
